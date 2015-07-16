@@ -24,7 +24,7 @@
       <visual>
         <origin xyz="0 0 0.601" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://fanuc_m900ib_support/meshes/m900ib/visual/link_1.stl"/>
+          <mesh filename="package://fanuc_m900ib_support/meshes/m900ib/visual/link_1.dae"/>
         </geometry>
         <xacro:material_fanuc_yellow />
       </visual>
@@ -39,7 +39,7 @@
       <visual>
         <origin xyz="0 0 0" rpy="0 0 3.14159265359"/>
         <geometry>
-          <mesh filename="package://fanuc_m900ib_support/meshes/m900ib/visual/link_2.stl"/>
+          <mesh filename="package://fanuc_m900ib_support/meshes/m900ib/visual/link_2.dae"/>
         </geometry>
         <xacro:material_fanuc_yellow />
       </visual>
@@ -54,7 +54,7 @@
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://fanuc_m900ib_support/meshes/m900ib/visual/link_3.stl"/>
+          <mesh filename="package://fanuc_m900ib_support/meshes/m900ib/visual/link_3.dae"/>
         </geometry>
         <xacro:material_fanuc_yellow />
       </visual>
@@ -114,7 +114,7 @@
       <visual>
         <origin xyz="-0.32955 -0.07795 -0.02692" rpy="0 0 ${-m_pi_2}"/>
         <geometry>
-          <mesh filename="package://fanuc_m900ib_support/meshes/m900ib/visual/fsw.stl"/>
+          <mesh filename="package://fanuc_m900ib_support/meshes/m900ib/visual/fsw.dae"/>
         </geometry>
         <xacro:material_fanuc_grey />
       </visual>
@@ -177,7 +177,7 @@
     <!-- ROS base_link to Fanuc World Coordinates transform -->
     <link name="${prefix}base" />
     <joint name="${prefix}base_link-base" type="fixed">
-      <origin xyz="0 0 0.950" rpy="0 0 0"/>
+      <origin xyz="0 0 0.940" rpy="0 0 0"/>
       <parent link="${prefix}base_link"/>
       <child link="${prefix}base"/>
     </joint>
